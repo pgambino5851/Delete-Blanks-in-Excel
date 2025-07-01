@@ -1,0 +1,45 @@
+<!-- Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT License. -->
+<!-- This file shows how to design a first-run page that provides a welcome screen to the user about the features of the add-in. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Delete Blank Cells Add-In</title>
+
+    <!-- Office JavaScript API -->
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+
+    <!-- For more information on Fluent UI, visit https://developer.microsoft.com/fluentui#/. -->
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css"/>
+
+    <!-- Template styles -->
+    <link href="taskpane.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Delete Rows with Blank Cells</h1>
+    </header>
+
+    <main>
+      <button id="deleteRowsButton">
+        🗑️ Delete Blank Rows
+      </button>
+      <div id="status">0 rows deleted</div>
+    </main>
+
+    <footer>
+        <div> © 2023 Microsoft Corporation. All rights reserved. </div>
+        <div> Contact <a href="mailto:pgambino5851@gmail.com" style="text-decoration: underline;">pgambino5851@gmail.com</a> for questions or bug reports. </div>
+    </footer>
+  </div>
+
+  <script src="taskpane.js"></script>
+</body>
+
+</html>
