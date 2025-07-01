@@ -1,0 +1,75 @@
+/* 
+ * Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT license.
+ * See LICENSE in the project root for license information.
+ */
+
+ body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #121212;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  background-color: #6A0DAD; /* purple */
+  color: white;
+  padding: 16px;
+  text-align: center;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+button {
+  background-color: #6A0DAD;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  margin: 10px 0;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 80%;
+  max-width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: #580e91;
+}
+
+#status {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #ccc;
+  padding: 10px;
+  font-size: 14px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #121212;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
