@@ -10,11 +10,16 @@
   <HighResolutionIconUrl DefaultValue="https://pgambino5851.github.io/Delete-Blanks-in-Excel/icon-64.png"/>
   <SupportUrl DefaultValue="https://github.com/pgambino5851"/>
   <AppDomains>
-    <AppDomain>https://www.contoso.com</AppDomain>
+    <AppDomain>https://pgambino5851.github.io</AppDomain>
   </AppDomains>
   <Hosts>
     <Host Name="Workbook"/>
   </Hosts>
+  <Requirements>
+  <Sets DefaultMinVersion="1.1">
+    <Set Name="ExcelApi" MinVersion="1.4"/>
+  </Sets>
+  </Requirements>
   <DefaultSettings>
     <SourceLocation DefaultValue="https://pgambino5851.github.io/Delete-Blanks-in-Excel/taskpane.html"/>
   </DefaultSettings>
@@ -29,7 +34,7 @@
             <LearnMoreUrl resid="GetStarted.LearnMoreUrl"/>
           </GetStarted>
           <ExtensionPoint xsi:type="PrimaryCommandSurface">
-            <OfficeTab id="DeleteBlankRowsTab">
+            <OfficeTab id="TabHome">
               <Group id="DeleteBlankRowsGroup">
                 <Label resid="CommandsGroup.Label"/>
                 <Icon>
@@ -72,10 +77,11 @@
       <bt:ShortStrings>
         <bt:String id="GetStarted.Title" DefaultValue="Delete all rows in selected range."/>
         <bt:String id="CommandsGroup.Label" DefaultValue="Commands Group"/>
-        <bt:String id="TaskpaneButton.Label" DefaultValue="Show Taskpane"/>
+<bt:String id="TaskpaneButton.Label" DefaultValue="Delete Blank Rows"/>
       </bt:ShortStrings>
       <bt:LongStrings>
-        <bt:String id="GetStarted.Description" DefaultValue="Your sample add-in loaded successfully. Go to the HOME tab and click the 'Show Taskpane' button to get started."/>
+        <bt:String id="GetStarted.Description" DefaultValue="Delete all rows with blank cells in your selected range using this plugin from the HOME tab.
+"/>
         <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Click to Show a Taskpane"/>
       </bt:LongStrings>
     </Resources>
